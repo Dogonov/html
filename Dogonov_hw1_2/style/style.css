@@ -1,0 +1,74 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url(https://html5book.ru/wp-content/uploads/2015/05/background1.png);
+    font-size: 15px;
+    background-repeat: repeat ;
+    background-position: center;
+    width: 1000px; 
+    margin: 0 auto;
+    letter-spacing: 2px;  
+    line-height: 1;
+    font-style: normal; 
+    
+}
+
+h1 {
+    background-color: #54f;
+    text-align: center;
+    color: #f00;
+    font-style: italic;
+    font-weight: 900;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #00f;
+}
+
+li {
+    border: 1px; color: red;
+}
+
+.poster {
+    align-items: center;
+    width: 200px; 
+    height: 300px;
+    letter-spacing: normal;
+}
+
+.discribe {
+    color: #000;
+    font-style: italic;
+    font-weight: 900;
+    letter-spacing: normal;
+
+}
+.container {
+    letter-spacing: normal;
+}
+.row {
+    letter-spacing: -0.36em;   
+}
+
+.col {
+    width: 50%;
+    margin: -1px;
+    vertical-align: top;
+    display: inline-block;  
+    letter-spacing: normal;
+    max-width: 500px;
+  }
+
+  .fixt {
+    letter-spacing: normal;
+  }
