@@ -1,0 +1,168 @@
+body {
+    background-color: #f9f9f9;
+    
+}
+
+.nav-menu ul {
+    padding: 0;
+}
+
+.wrapper {
+    width: 1060px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px 45px 60px;
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+}
+
+.logo {
+    display: block;
+    width: 145px;
+    height: 44px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    overflow: auto;
+    padding: 0;
+    background-color: #504f4f;
+    font-size: 0;
+    margin-top: 40px;
+    line-height: 40px;
+    
+}
+
+.nav-menu li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.part-menu {
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+    background-color: #3c3c3c;
+}
+
+.nav-menu a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    height: 45px;
+    padding: 0 40px;
+}
+
+.active {
+    background-color: #434343;
+    }
+    
+
+/* ---------------------------------------------------- */
+
+
+
+
+
+.side-menu {
+    width: 240px;
+    float: left;
+    margin-right: 50px;
+}
+
+.side-menu a {
+    font-size: 13px;
+    color: #656363;
+    text-decoration: none;
+    display: block;
+    padding: 15px 0 15px 20px;
+}
+
+.side-menu li {
+    border-top: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
+    overflow: auto;
+}
+
+.border {
+    border-bottom: 1px solid #c8c8c8;
+
+}
+
+.side-menu-col {
+    background-color: #f9f9f9;
+    padding-left: 15px;
+}
+
+.main-content {
+    float: right;
+    width: 675px;
+}
+
+.main-img {
+    border: 1px solid #c8c8c8;
+    padding: 50px 0;
+    margin-top: 40px;
+    margin-left: -100px;
+    text-align: center;
+}
+
+.main {
+    overflow: auto;
+}
+
+p {
+    margin-top: 40px;
+    font-size: 13px;
+    color: #2c2c2c;
+    margin-left: -75px;
+}
+
+
+
+/* ---------------------------------------------------- */
+
+
+
+footer {
+    list-style-type: none;
+    padding: 0;
+    background-color: #e1e1e1;
+    overflow: auto;
+    font-size: 0;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.nav-menu-foot {
+    list-style-type: none;
+    overflow: auto;
+    padding: 0;
+    background-color: #e1e1e1;
+    font-size: 0;
+    margin-top: 40px;
+    line-height: 40px;   
+}
+
+.nav-menu-foot li {
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.nav-menu-foot a {
+    color: #000;
+    text-decoration: none;
+    height: 40px;
+    padding: 0 40px;
+    }    
+
+.underline{
+text-decoration: underline;
+}
+
+.nav-menu-right {
+    float: right
+}
