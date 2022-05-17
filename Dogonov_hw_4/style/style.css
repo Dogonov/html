@@ -6,6 +6,7 @@ body {
     width: 1260px;
     margin: 0 auto;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+    padding: 8px 64px;
 }
 
 .container {
@@ -18,19 +19,18 @@ body {
 .header-in {
     display: flex;
     justify-content: space-between;
-    padding: 16px 16px 0px 16px;
     align-items: center;
     font-family: "Roboto", sans-serif;
     background-color: #fff;
 }
 
 .header-logo {
-    padding-left: 72px;
+    padding-left: 64px;
+    margin: 16px 0;
 }
 
-.button :hover {
+.button {
     padding-right: 72px;
-
 }
 
 ul {
@@ -51,7 +51,6 @@ a {
 
 .blue { 
     border-bottom: 3px solid #0066cc;
-    
 }
 
 .blue a {
@@ -83,13 +82,12 @@ a {
     cursor: pointer;
 }
 
-.main-fon {
-    width: 1260px;
+.main-bg {
     height: 200px;
     margin: 0 auto;
 }
 
-.main-fon {
+.main-bg {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,7 +95,7 @@ a {
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
 }
 
-.main-fon-h1 {
+.main-title {
     font-family: "Roboto", sans-serif;
     font-size: 64px;
     line-height: 56px;
@@ -110,7 +108,7 @@ a {
     font-variant: small-caps;
 }
 
-.main-fon-h2 {
+.main-sub-title {
     font-family: "Roboto", sans-serif;
     margin-top: 24px;
     font-size: 24px;
@@ -128,7 +126,6 @@ a {
 
 .navigation {
     display: flex;
-
     font-family: "Roboto", sans-serif;
 }
 
@@ -143,44 +140,18 @@ a {
 
 /*=============================================================*/
 .main {
-    margin: 0 auto;
-    width: 1260px;
-    height: 528px;
+    padding: 64px;
     background-color: #fafafa;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.box-1 {
-    position: absolute;
-    top: 64px;
-    left: 72px;
-    bottom: 64px;
-    right: 840px;
+.box {
     height: 400px;
     width: 368px;
     background-color: #fff;
-}
-
-.box-2 {
-    position: absolute;
-    top: 64px;
-    bottom: 64px;
-    left: 456px;
-    right: 456px;
-    height: 400px;
-    width: 368px;
-    background-color: #fff;
-}
-
-.box-3 {
-    position: absolute;
-    top: 64px;
-    left: 840px;
-    right: 72px;
-    bottom: 64px;
-    height: 400px;
-    width: 368px;
-    background-color: #fff;
+    margin: 8px;
 }
 
 /*=============================================================*/
@@ -230,14 +201,12 @@ a {
     color: #000000a3;
     font-size: 14px;
     line-height: 16px;
-    cursor: pointer;
 }
 
 .footer-bottom {
     height: 48px;
     margin-top: 32px;
 }
-
 
 .footer-ul-box {
     padding-left: 16px;
@@ -251,7 +220,7 @@ a {
     font-size: 12px;
 }
 
-li.foot-set-pad:hover {
+.foot-set-pad a:hover {
     color: #0066cc;
 }
 
