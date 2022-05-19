@@ -1,0 +1,57 @@
+body {
+    padding: 10px;
+}
+
+.main-menu {
+    display: flex;            
+}
+
+.main-menu > li {
+    list-style-type: none;       
+    border-top: 1px solid green;
+    border-left: 1px solid green;
+    border-bottom: 1px solid green;
+}
+
+.main-menu > li:last-child{
+    border-right: 1px solid green;
+}
+
+li:hover {
+    background-color: blue;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    display: block;
+}
+
+.has-sub-menu {
+    position: relative;            
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    padding: 0;
+    width: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.sub-menu > li {
+    list-style-type: none;      
+    border-top: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.sub-menu li:last-child{
+    border-bottom: 1px solid red;
+}
+
+.has-sub-menu:hover .sub-menu {
+    display: block;
+}

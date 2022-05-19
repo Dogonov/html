@@ -1,0 +1,61 @@
+
+.wrapper {
+    margin: 0 auto;
+    width: 1500px; 
+    height: 1000px; 
+    border: 1px solid rgb(54, 139, 54);
+}
+
+.header {
+    padding: 8px;
+    background-color: rgb(131, 212, 131);
+}
+
+.container {
+    display: flex;
+}
+
+.scrol {
+    margin-left: 40px;
+}
+
+/* ----------------- */
+.main {
+    padding: 5px;
+    display: block;
+}
+
+.main-left label::after {
+    content: "*";
+    color: red;
+}
+
+.main-left label::after {
+    margin-left: 50px;
+}
+
+.red-star {
+    color: red;
+}
+
+
+/* ----------------- */
+.footer {
+    display: flex;
+    background-color: rgb(175, 170, 170);
+}
+
+.but {
+    margin: 5px auto
+}
+
+.but input {
+    background-color: rgb(131, 212, 131);
+    border: 1px solid rgb(54, 139, 54);
+    color: #fff;
+}
+
+.but input {
+    width: 80px;
+    height: 20px;
+}
