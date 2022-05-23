@@ -15,38 +15,134 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- header-------------------------------------------------------------------------------- -->
-        <div class="header">
-            <div class="container">
-                <div>Contact Manager</div>
-                <div class="scrol">
-                    <select class="scrol-ch" name="head" id="head" size="1">
-                        <option value="value1" selected>More Actions</option>
-                        <option value="value2">More Actions 2</option>
-                        <option value="value3">More Actions 3</option>
-                    </select>
+    <form>
+        <div class="wrapper">
+            <!-- header-------------------------------------------------------------------------------- -->
+            <div class="header">
+                <div class="container">
+                    <div>Contact Manager</div>
+                    <div class="scrol">
+                        <select class="scrol-ch" name="head" id="head" size="1">
+                            <option value="value1" selected>More Actions</option>
+                            <option value="value2">More Actions 2</option>
+                            <option value="value3">More Actions 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- main---------------------------------------------------------------------------------- -->
+            <div class="main">
+                <div class="main-left">
+                    <div class="form-item red-star">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name">
+                    </div>
+                    <div class="form-item red-star">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name">
+                    </div>
+                    <div class="form-item">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <label for="city">City</label>
+                        <input type="text" id="city">
+                    </div>
+                    <div class="form-item">
+                        <label for="State">State</label>
+                        <select name="state" id="state">
+                            <option value="select">-Select-</option>
+                            <option value="select">-Select-</option>
+                            <option value="select">-Select-</option>
+                            <option value="select">-Select-</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip">
+                    </div>
+                    <div class="form-item">
+                        <label for="home_phone">Home Phone</label>
+                        <input type="text" id="home_phone">
+                    </div>
+                    <div class="form-item red-star">
+                        <label for="work_phone">Work Phone</label>
+                        <input type="text" id="work_phone">
+                    </div>
+                    <div class="form-item">
+                        <label for="fax_number">Fax Number</label>
+                        <input type="text" id="fax_number">
+                    </div>
+                    <div class="form-item">
+                        <label for="website"> Website</label>
+                        <div class="web">
+                            <div class="web-form">
+                                <label for="url">URL</label>
+                                <input type="text" id="url">
+                            </div>
+                            <div class="web-form">
+                                <label for="link_name">Link Name</label>
+                                <input type="text" id="link_name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item red-star">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email">
+                    </div>
+                </div>
+                <!-- main -right -->
+                <div class="main-right">
+                    <div class="form-item">
+                        <label for="question">When is the best time to contact you?</label>
+                        <div class="time">
+                            <div>
+                                <input type="radio" id="morning" name="morning" value="morning">
+                                <label for="morning">Morning</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="afternoon" name="afternoon">
+                                <label for="afternoon">Afternoon</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="evening" name="evening">
+                                <label for="evening">Evevning</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="question">What is the best way to contact you?</label>
+                        <div class="way">
+                            <div>
+                                <input type="radio" id="phone" name="way" value="">
+                                <label for="way">Phone</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="email" name="way">
+                                <label for="way">Email</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="fax" name="way">
+                                <label for="way">Fax</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="message">Address</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-------------------------------------------------------------------------------- -->
+            <div class="footer">
+                <div class="but">
+                    <input type="submit" value="submit">
+                    <input type="reset" name="reset" value="reset">
                 </div>
             </div>
         </div>
-        <!-- main---------------------------------------------------------------------------------- -->
-        <div class="main">
-            <div class="main-left">
-                <form>
-                    <label for="first_name">First Name</label>
-                    <input type="text" name="first_name">
-                </form>
-            </div>
-            <div class="main-right"></div>
-        </div>
-        <!-- footer-------------------------------------------------------------------------------- -->
-        <div class="footer">
-            <div class="but">
-                <input type="submit" value="Submit">
-                <input type="reset" name="reset" value="Reset">
-            </div>
-        </div>
-    </div>
+    </form>
 </body>
 
 </html>

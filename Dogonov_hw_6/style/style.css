@@ -1,8 +1,9 @@
+body {
+    padding: 20px;
+}
 
 .wrapper {
     margin: 0 auto;
-    width: 1500px; 
-    height: 1000px; 
     border: 1px solid rgb(54, 139, 54);
 }
 
@@ -13,31 +14,102 @@
 
 .container {
     display: flex;
+    font-weight: bold;
 }
 
 .scrol {
     margin-left: 40px;
 }
 
+.scrol select {
+    background-color: rgb(131, 212, 131);
+    border: 0;
+    overflow: -moz-hidden-unscrollable;
+}
+
+/* .scrol select::after {
+    content: "0";
+    color: black;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+} */
+
 /* ----------------- */
 .main {
     padding: 5px;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
 }
 
-.main-left label::after {
+.main-left {
+    width: 45%;
+}
+
+.main-right {
+    width: 45%;
+}
+
+.main-left input {
+    width: 45%;
+}
+
+.form-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-item.red-star label::after {
     content: "*";
     color: red;
 }
 
-.main-left label::after {
-    margin-left: 50px;
+.form-item select {
+    margin: 0;
+    padding: 0;
+    width: 45%;
 }
 
-.red-star {
-    color: red;
+textarea {
+    height: 100px;
+    resize: none;
+    width: 45%;
 }
 
+.web {
+    width: 45%;
+    padding-left: 0;
+}
+
+.web input {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 60%;
+}
+
+.web-form {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.web label {
+    padding: 0;
+}
+
+.time {
+    padding-right: 30%;
+}
+
+.way {
+    padding-right: 30%;
+    margin-right: 25px;
+}
 
 /* ----------------- */
 .footer {
