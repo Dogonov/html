@@ -19,22 +19,26 @@ body {
 
 .scrol {
     margin-left: 40px;
+    position: relative;
+
 }
+
+  .scrol:after {
+    content: '▲';
+    color: #000;
+    transform: rotate(180deg);
+    
+    position: absolute;
+  }
+  
+  .scrol select {
+    appearance: none;
+  }
 
 .scrol select {
     background-color: rgb(131, 212, 131);
     border: 0;
-    overflow: -moz-hidden-unscrollable;
 }
-
-/* .scrol select::after {
-    content: "0";
-    color: black;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-} */
 
 /* ----------------- */
 .main {
@@ -63,7 +67,7 @@ body {
     font-weight: bold;
 }
 
-.form-item.red-star label::after {
+.form-item.red-star label:after {
     content: "*";
     color: red;
 }
@@ -78,6 +82,28 @@ textarea {
     height: 100px;
     resize: none;
     width: 45%;
+}
+
+.form-select {
+    position: relative;
+  }
+  
+  .form-select:after {
+    content: '▲';
+    transform: rotate(180deg);
+    background: #0ebeff;
+    color: #333;
+    margin-top: 1px;
+    right: 0;
+    position: absolute;
+  }
+  
+  .form-select select {
+    appearance: none;
+  }
+
+.short input:after {
+    padding-right: 150px;
 }
 
 .web {
@@ -103,12 +129,11 @@ textarea {
 }
 
 .time {
-    padding-right: 30%;
+    width: 45%;
 }
 
 .way {
-    padding-right: 30%;
-    margin-right: 25px;
+    width: 45%;
 }
 
 /* ----------------- */
