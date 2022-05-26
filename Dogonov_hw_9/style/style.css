@@ -1,0 +1,30 @@
+.wrapper {
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.header {
+    background: url(./image/Headerhedd.png);
+    position: relative;
+    /* width: 1280px; */
+    height: 960px;
+    background: #FFFFFF;
+}
+
+.header h1 {
+    color: #FFFFFF;
+}
+
+.btn {
+    position: absolute;
+    width: 130px;
+    height: 35.52px;
+    left: 413px;
+    top: 184px;
+    background-color: #F0650D;
+}
+
+.btn-grey{
+    left: 689px;
+    background-color: #4B5A65;
+}
