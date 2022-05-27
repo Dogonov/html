@@ -1,18 +1,18 @@
 .body {
   width: 100%;
-
   background: #2b2b2b;
   font-family: "Red Hat Text", sans-serif;
 }
 .wrapper {
   width: 100%;
   width: 1440px;
-
   margin: 0 auto;
   background: #2b2b2b;
 }
+
 /* header
 ========================================= */
+
 .header {
   width: 1131px;
   height: 120px;
@@ -23,46 +23,37 @@
   display: flex;
   align-items: center;
 }
+
 .content a {
   text-decoration: none;
 }
-.menu_link a {
+
+.menu-link a {
   color: #bfbfbf;
 }
-.menu_link a:hover {
-  color: white;
-  transition: 1s;
-}
+
 .logo {
   width: 46px;
   height: 120px;
 }
 
-.menu_link {
+.menu-link {
   font-size: 48px;
   color: #bfbfbf;
-
-  letter-spacing: -0.02em;
+  letter-spacing: -0.07em;
 }
 
-li.menu_link {
+li.menu-link {
   padding-left: 84px;
 }
 
-.menu_link:hover {
-  color: white;
-  transition: 0.7s;
-}
-
-.active a {
+.header-menu a {
   padding-left: 84px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.07em;
   font-size: 48px;
   color: white;
 }
 
-/* button
-========================================= */
 .button {
   height: 71px;
   width: 227px;
@@ -73,14 +64,17 @@ li.menu_link {
   background: #2b2b2b;
   color: #bfbfbf;
 }
+
 .button a {
   color: #bfbfbf;
 }
+
 .button a:hover {
   color: white;
   transition: 1s;
 }
-.button_form {
+
+.button-form {
   padding-left: 127px;
 }
 
@@ -95,20 +89,19 @@ li.menu_link {
   margin: 0 auto;
 }
 
-.main_content {
+.main-content {
   width: 786px;
   height: 898px;
   padding: 196px 336px 40px 318px;
 }
 
-.main_text {
+.main-text {
   color: rgba(229, 229, 229, 1);
-
   font-size: 96px;
   padding-left: 171px;
 }
 
-.main_photo {
+.main-img {
   width: 402px;
   height: 757px;
 }
@@ -120,9 +113,9 @@ li.menu_link {
   padding-top: 235px;
 }
 
-.information {
+.info-ul {
   font-size: 48px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.07em;
   color: #5c97b1;
   line-height: 56px;
   font-family: "Roboto", sans-serif;
@@ -132,9 +125,10 @@ li.menu_link {
   margin-bottom: 28px;
 }
 
-.hr_zone {
+.line {
+  border: 1px solid #E5E5E5;
   width: 1274px;
-  color: rgb(229, 229, 229);
+  margin-left: 83px;
 }
 
 /* footer
@@ -144,7 +138,7 @@ li.menu_link {
   height: 414px;
 }
 
-.footer_zone {
+.footer-conteiner {
   margin: 37px auto 62px auto;
   width: 731px;
   height: 315px;
@@ -152,7 +146,7 @@ li.menu_link {
   justify-content: space-between;
 }
 
-.column li:not(.footer_main_text) {
+.column li:not(.footer-text) {
   margin-bottom: 10px;
   font-size: 24px;
 }
@@ -161,14 +155,17 @@ li.menu_link {
   text-decoration: none;
   color: #4b6571;
 }
+
 .column a:hover {
   color: rgba(134, 182, 204, 1);
   transition: 0.7s;
 }
-.footer_main_text {
+
+.footer-text {
   margin-bottom: 41px;
 }
-.footer_main_text a {
+
+.footer-text a {
   font-size: 24px;
   color: #cacaca;
 }
