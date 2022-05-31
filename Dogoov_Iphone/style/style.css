@@ -44,11 +44,11 @@
 }
 
 li.menu-link {
-  padding-left: 84px;
+  margin-left: 84px;
 }
 
 .header-menu a {
-  padding-left: 84px;
+  margin-left: 84px;
   letter-spacing: -0.07em;
   font-size: 48px;
   color: white;
@@ -65,8 +65,8 @@ li.menu-link {
   color: #bfbfbf;
 }
 
-.button a {
-  color: #bfbfbf;
+.button:hover {
+  cursor: pointer;
 }
 
 .button a:hover {
@@ -75,7 +75,7 @@ li.menu-link {
 }
 
 .button-form {
-  padding-left: 127px;
+  margin-left: 127px;
 }
 
 /* main
@@ -92,13 +92,18 @@ li.menu-link {
 .main-content {
   width: 786px;
   height: 898px;
-  padding: 196px 336px 40px 318px;
+  margin: 0 auto;
+  padding: 196px 0 40px 0;
 }
 
 .main-text {
   color: rgba(229, 229, 229, 1);
   font-size: 96px;
-  padding-left: 171px;
+  margin-left: 171px;
+}
+
+.main-position {
+  display: flex;
 }
 
 .main-img {
@@ -109,8 +114,8 @@ li.menu-link {
 .info {
   width: 226px;
   height: 308px;
-  float: right;
-  padding-top: 235px;
+  margin-top: 235px;
+  margin-left: 158px;
 }
 
 .info-ul {
@@ -134,11 +139,9 @@ li.menu-link {
 /* footer
 ========================================= */
 
-.footer {
-  height: 414px;
-}
 
-.footer-conteiner {
+
+.footer {
   margin: 37px auto 62px auto;
   width: 731px;
   height: 315px;
