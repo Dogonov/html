@@ -1,0 +1,57 @@
+.main {
+  width: 100%;
+}
+.main__wrapper {
+  width: 100%;
+  max-width: 1192px;
+  margin: 0 auto;
+  display: flex;
+}
+.main__text {
+  padding-top: 210px;
+
+  .main__text-set {
+    width: 100%;
+    max-width: 549px;
+    font-size: 72px;
+    font-family: $main-text-font;
+  }
+}
+.main__message {
+  max-width: 538px;
+
+  .main__message-set {
+    font-family: $header-text-font;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #9a9a9a;
+  }
+}
+.main__button {
+  padding-top: 50px;
+
+  .main__button-set {
+    width: 152px;
+    height: 63px;
+    background: #4f56f1;
+    border-radius: 6px;
+    border: 0px;
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+    &:hover {
+      background: #30336d;
+      transition: 0.7s;
+    }
+  }
+}
+.aside {
+  padding-top: 112px;
+  position: relative;
+  left: 106px;
+}
