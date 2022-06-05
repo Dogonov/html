@@ -1,26 +1,29 @@
 .main {
   width: 100%;
 }
+
 .main__wrapper {
   width: 100%;
   max-width: 1192px;
   margin: 0 auto;
   display: flex;
 }
-.main__text {
-  padding-top: 210px;
 
-  .main__text-set {
+.main__text {
+  margin-top: 210px;
+
+  .main__text_header {
     width: 100%;
     max-width: 549px;
     font-size: 72px;
     font-family: $main-text-font;
   }
 }
-.main__message {
+
+.main__text_secind {
   max-width: 538px;
 
-  .main__message-set {
+  .main__text_secind_set {
     font-family: $header-text-font;
     font-size: 20px;
     line-height: 32px;
@@ -28,15 +31,17 @@
     color: #9a9a9a;
   }
 }
-.main__button {
-  padding-top: 50px;
 
-  .main__button-set {
+.main__button {
+  margin-top: 50px;
+
+  .main__button_text {
     width: 152px;
-    height: 63px;
+    height: 64px;
     background: #4f56f1;
     border-radius: 6px;
     border: 0px;
+
     a {
       color: #fff;
       text-decoration: none;
@@ -45,13 +50,13 @@
       letter-spacing: 0.02em;
     }
     &:hover {
-      background: #30336d;
-      transition: 0.7s;
+      cursor: pointer;
     }
   }
 }
-.aside {
-  padding-top: 112px;
+
+.img {
+  margin-top: 112px;
   position: relative;
   left: 106px;
 }
