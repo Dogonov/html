@@ -2,6 +2,7 @@
   max-width: 1184px;
   margin: 0 auto;
 }
+
 .footer_main {
   margin-top: 120px;
   display: flex;
@@ -11,8 +12,10 @@
 .footer_mainbox {
   max-width: 310px;
 }
+
 .mainbox_text {
   margin-top: 31px;
+
   .mainbox_text-set {
     color: #455880;
     font-size: 18px;
@@ -20,12 +23,14 @@
     font-family: $main-text-font;
   }
 }
+
 .footer_nav {
   display: flex;
   flex-direction: column;
   max-width: 83px;
   width: 100%;
 }
+
 .nav_main {
   color: #1e266d;
   font-size: 22px;
@@ -34,16 +39,19 @@
   font-family: $main-text-font;
   margin-bottom: 30px;
 }
+
 .nav_link {
   font-size: 18px;
   color: #455880;
   line-height: 40px;
   text-decoration: none;
   font-family: $main-text-font;
+
   &:hover {
     text-decoration: underline;
   }
 }
+
 .footer_resources {
   display: flex;
   flex-direction: column;
@@ -55,26 +63,32 @@
   height: 40px;
   align-items: center;
 }
+
 .foot_link {
   height: 40px;
 }
+
 .foot_img {
   height: 17px;
 }
+
 .footer_bottom {
   display: flex;
   justify-content: space-between;
   margin-top: 53px;
   margin: 53px 1%;
 }
+
 .bottom_link {
   display: flex;
   gap: 30px;
 }
+
 .footer_bottom-text {
   color: rgba(69, 88, 128, 0.5);
   font-family: $main-text-font;
 }
+
 .footer_bottom-link {
   color: #455880;
   font-size: 14px;
@@ -82,10 +96,12 @@
   text-decoration: none;
   gap: 30px;
   font-family: $main-text-font;
+
   &:hover {
     text-decoration: underline;
   }
 }
+
 .footer_main {
   border-bottom: 1px solid rgba(135, 146, 161, 0.08);
 }

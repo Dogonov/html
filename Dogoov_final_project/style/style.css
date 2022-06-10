@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -191,7 +190,7 @@ table {
   border-radius: 100px;
   background: #3751ff;
   color: white;
-  border: 0px;
+  border: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,26 +207,14 @@ table {
   display: none;
   text-decoration: none;
   color: #1e266d;
-  font-size: 16px;
-  margin-left: 1%;
-}
-
-.mini_menu:hover {
-  text-decoration: underline;
+  font-size: 25px;
+  margin-left: 20%;
 }
 
 .sub_menu {
   display: none;
   gap: 49px;
-  margin-left: 4%;
-}
-
-.mini_menu:focus ~ .sub_menu,
-.mini_menu:active ~ .sub_menu,
-.sub_menu:hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-left: 5%;
 }
 
 .sub_menu-set {
@@ -240,12 +227,6 @@ table {
           align-items: center;
 }
 
-.sub_menu-set:hover {
-  background-image: url(../Images/arrow-down.png);
-  background-repeat: no-repeat;
-  background-position: center 1px;
-}
-
 .sub_menu-link {
   text-decoration: none;
   color: #1e266d;
@@ -256,8 +237,6 @@ table {
   text-decoration: underline;
 }
 
-/* main ====================================>
-  =================================================================> */
 .main {
   margin: 0 auto;
   max-width: 1600px;
@@ -483,7 +462,6 @@ table {
   line-height: 27px;
 }
 
-/* 2 секция */
 .box_main {
   display: none;
 }
@@ -927,7 +905,6 @@ table {
     max-width: 1000px;
   }
   .phone {
-    width: 100%;
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right;
@@ -1056,7 +1033,6 @@ table {
   }
 }
 
-/*900 */
 @media (max-width: 900px) {
   .head_menu_set {
     width: 491px;
@@ -1084,6 +1060,12 @@ table {
   .sub_menu {
     gap: 27px;
   }
+  .mini_menu:hover ~ .sub_menu {
+    display: block;
+  }
+  .sub_menu-set {
+    height: 15px;
+  }
   .main_text {
     font-size: 45px;
   }
@@ -1098,19 +1080,6 @@ table {
   }
   .bottom_text-set {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 750px) {
-  .mini_menu:active ~ .sub_menu,
-  .mini_menu:focus ~ .sub_menu {
-    display: block;
-  }
-  .sub_menu-set {
-    height: 15px;
-  }
-  .sub_menu-set:hover {
-    background-image: none;
   }
 }
 
