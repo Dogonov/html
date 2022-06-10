@@ -1,0 +1,132 @@
+.header {
+  height: 82px;
+  font-family: $main-text-font;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  .container {
+    width: 100%;
+    width: 1180px;
+    margin: 0 auto;
+    font-family: $main-text-font;
+  }
+  .header_inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header_logo {
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+  }
+}
+
+.arrow {
+  margin-top: 50px;
+  margin-left: 50%;
+  margin-bottom: -35px;
+}
+
+.header_menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 781px;
+  justify-content: center;
+  .header_menu-set {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 90px;
+    align-items: center;
+    .menu_set {
+      margin-right: 8px;
+      height: 75px;
+      align-items: center;
+      display: flex;
+      .menu_set-link {
+        font-size: 16px;
+        text-decoration: none;
+        color: #1e266d;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+.phone_icon {
+  display: none;
+}
+.phone_link {
+  color: #1e266d;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.button {
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+  margin-left: 2%;
+  .button_set {
+    width: 113px;
+    height: 40px;
+    border-radius: 100px;
+    background: #3751ff;
+    color: white;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+}
+.mini_menu {
+  display: none;
+  text-decoration: none;
+  color: #1e266d;
+  font-size: 16px;
+  margin-left: 1%;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.sub_menu {
+  display: none;
+  gap: 49px;
+  margin-left: 4%;
+}
+.mini_menu:focus ~ .sub_menu,
+.mini_menu:active ~ .sub_menu,
+.sub_menu:hover {
+  display: flex;
+}
+.sub_menu-set {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-image: url(../Images/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: center 1px;
+  }
+}
+.sub_menu-link {
+  text-decoration: none;
+  color: #1e266d;
+  font-size: 16px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

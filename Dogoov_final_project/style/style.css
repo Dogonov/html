@@ -1,0 +1,1274 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Tiro Tamil", serif;
+  src: url(../fonts/Halyard_Text_Regular.ttf);
+}
+
+.header {
+  height: 82px;
+  font-family: "Tiro Tamil", serif;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container {
+  width: 100%;
+  width: 1180px;
+  margin: 0 auto;
+  font-family: "Tiro Tamil", serif;
+}
+
+.header .header_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .header_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1%;
+}
+
+.arrow {
+  margin-top: 50px;
+  margin-left: 50%;
+  margin-bottom: -35px;
+}
+
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 781px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header_menu .header_menu-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_menu .header_menu-set .menu_set {
+  margin-right: 8px;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_menu .header_menu-set .menu_set .menu_set-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #1e266d;
+}
+
+.header_menu .header_menu-set .menu_set .menu_set-link:hover {
+  text-decoration: underline;
+}
+
+.phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone_icon {
+  display: none;
+}
+
+.phone_link {
+  color: #1e266d;
+  text-decoration: none;
+}
+
+.phone_link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.button .button_set {
+  width: 113px;
+  height: 40px;
+  border-radius: 100px;
+  background: #3751ff;
+  color: white;
+  border: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+}
+
+.mini_menu {
+  display: none;
+  text-decoration: none;
+  color: #1e266d;
+  font-size: 16px;
+  margin-left: 1%;
+}
+
+.mini_menu:hover {
+  text-decoration: underline;
+}
+
+.sub_menu {
+  display: none;
+  gap: 49px;
+  margin-left: 4%;
+}
+
+.mini_menu:focus ~ .sub_menu,
+.mini_menu:active ~ .sub_menu,
+.sub_menu:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sub_menu-set {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sub_menu-set:hover {
+  background-image: url(../Images/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: center 1px;
+}
+
+.sub_menu-link {
+  text-decoration: none;
+  color: #1e266d;
+  font-size: 16px;
+}
+
+.sub_menu-link:hover {
+  text-decoration: underline;
+}
+
+/* main ====================================>
+  =================================================================> */
+.main {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+.main .main_bg {
+  margin: 0 auto;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 249, 255, 0.12)), to(#f2f9ff));
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #f2f9ff 100%);
+  height: 878px;
+}
+
+.main_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 56px;
+  margin-top: 1px;
+  font-family: "Tiro Tamil", serif;
+  width: 100%;
+}
+
+.main_text .main_text-set {
+  color: #1e266d;
+  font-family: "Tiro Tamil", serif;
+  font-weight: bolder;
+  margin-top: 144px;
+  width: 100%;
+}
+
+.main_bottom-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 27px;
+  width: 100%;
+}
+
+.main_bottom-text .main_bottom-set {
+  color: #455880;
+  font-size: 18px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Tiro Tamil", serif;
+}
+
+.main_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 27px;
+  margin-bottom: 32px;
+  width: 100%;
+  font-family: "Tiro Tamil", serif;
+}
+
+.main_buttons .button_right {
+  width: 199px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  margin-left: 14px;
+  color: #455880;
+  border: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.main_buttons .button_left {
+  width: 148px;
+  height: 50px;
+  background: #3751ff;
+  border-radius: 100px;
+  margin-right: 14px;
+  color: white;
+  border: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main_bottom_text {
+  margin-top: 52px;
+  margin-bottom: 49px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.bottom_text-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  color: rgba(69, 88, 128, 0.5);
+  font-family: "Tiro Tamil", serif;
+}
+
+.main_logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 49px;
+  margin-left: 210px;
+  margin-right: 210px;
+}
+
+.logo_mini {
+  display: none;
+}
+
+.main_content {
+  margin-top: 169px;
+}
+
+.main_content .content_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 5%;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: center;
+  color: #1E266D;
+  display: flex;
+  margin: 0 auto;
+}
+
+.content_inform {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.content_inform .inform_box {
+  width: 405px;
+  height: 180px;
+  border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+  margin-top: 35px;
+  margin-left: 138px;
+  padding-bottom: 20px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.content_photo {
+  width: 598px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 210px;
+  margin-right: 170px;
+}
+
+.inform_box-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content_box-name {
+  font-size: 22px;
+  color: #1e266d;
+  margin-left: 47px;
+  font-weight: bolder;
+}
+
+.content_text-about {
+  font-size: 18px;
+  color: #455880;
+  margin-left: 105px;
+  line-height: 27px;
+}
+
+/* 2 секция */
+.box_main {
+  display: none;
+}
+
+.section_portfolio {
+  background-color: #fff9ea;
+  max-height: 1001px;
+  margin-top: 34px;
+  width: 100%;
+}
+
+.section_text {
+  font-size: 48px;
+  color: #1e266d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 139px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.section_text-bottom {
+  font-size: 21px;
+  color: #455880;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.section_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section_button-central {
+  width: 148px;
+  height: 50px;
+  background: #3751ff;
+  border-radius: 100px;
+  color: white;
+  border: 0px;
+  margin-top: 40px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-family: "Tiro Tamil", serif;
+}
+
+.graphic_set {
+  width: 100%;
+}
+
+.saying {
+  height: 838px;
+  width: 100%;
+}
+
+.saying .container_most {
+  max-width: 1184px;
+  margin: 0 auto;
+  margin-top: 232px;
+}
+
+.saying_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 56px;
+}
+
+.saying_main .saying_main-text {
+  color: #1e266d;
+  font-size: 48px;
+  line-height: 60px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.saying_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.saying_box {
+  width: 100%;
+  max-width: 372px;
+  height: 467px;
+  border: 1px solid rgba(69, 88, 128, 0.2);
+  border-radius: 4px;
+}
+
+.saying_box .saying_box-text {
+  font-size: 18px;
+  line-height: 32px;
+  color: #455880;
+  font-family: "Tiro Tamil", serif;
+  padding: 38px 35px;
+}
+
+.saying_box-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 55px;
+}
+
+.saying_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 23px;
+}
+
+.saying_username {
+  font-size: 22px;
+  line-height: 28px;
+  color: #1e266d;
+  font-weight: 600;
+  font-family: "Tiro Tamil", serif;
+  margin-bottom: 10px;
+}
+
+.saying_link {
+  font-size: 18px;
+  color: #455880;
+  font-family: "Tiro Tamil", serif;
+  text-decoration: none;
+}
+
+.saying_link:hover {
+  text-decoration: underline;
+}
+
+.ready {
+  max-height: 323px;
+  height: 100%;
+  width: 100%;
+  background-color: #3751ff;
+}
+
+.container_ready {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.ready_content {
+  height: 120px;
+  padding-top: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ready_text {
+  max-width: 405px;
+}
+
+.ready_text-set {
+  font-size: 48px;
+  line-height: 60px;
+  color: #ffffff;
+  font-family: "Tiro Tamil", serif;
+}
+
+.ready_btn {
+  width: 245px;
+  height: 56px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+}
+
+.ready_btn-set {
+  font-family: "Tiro Tamil", serif;
+  font-size: 18px;
+  color: #455880;
+  line-height: 20px;
+  text-align: center;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  justify-content: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+  margin-left: 137px;
+}
+
+.ready_btn-icon {
+  margin-right: 16px;
+}
+
+.ready_side-text {
+  margin-top: 19px;
+}
+
+.ready_side-text-set {
+  font-size: 16px;
+  font-family: "Tiro Tamil", serif;
+  color: #dfe0eb;
+  margin-left: 105px;
+}
+
+.ready_link {
+  font-size: 16px;
+  font-family: "Tiro Tamil", serif;
+  color: #fed385;
+  text-decoration: none;
+}
+
+.ready_link:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: "Tiro Tamil", serif;
+  src: url(../fonts/Halyard_Text_Regular.ttf);
+}
+
+.container_footer {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.footer_main {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer_mainbox {
+  max-width: 310px;
+}
+
+.mainbox_text {
+  margin-top: 31px;
+}
+
+.mainbox_text .mainbox_text-set {
+  color: #455880;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.footer_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 83px;
+  width: 100%;
+}
+
+.nav_main {
+  color: #1e266d;
+  font-size: 22px;
+  line-height: 28px;
+  text-decoration: none;
+  font-family: "Tiro Tamil", serif;
+  margin-bottom: 30px;
+}
+
+.nav_link {
+  font-size: 18px;
+  color: #455880;
+  line-height: 40px;
+  text-decoration: none;
+  font-family: "Tiro Tamil", serif;
+}
+
+.nav_link:hover {
+  text-decoration: underline;
+}
+
+.footer_resources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icons_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.foot_link {
+  height: 40px;
+}
+
+.foot_img {
+  height: 17px;
+}
+
+.footer_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 53px;
+  margin: 53px 1%;
+}
+
+.bottom_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.footer_bottom-text {
+  color: rgba(69, 88, 128, 0.5);
+  font-family: "Tiro Tamil", serif;
+}
+
+.footer_bottom-link {
+  color: #455880;
+  font-size: 14px;
+  line-height: 27px;
+  text-decoration: none;
+  gap: 30px;
+  font-family: "Tiro Tamil", serif;
+}
+
+.footer_bottom-link:hover {
+  text-decoration: underline;
+}
+
+.footer_main {
+  border-bottom: 1px solid rgba(135, 146, 161, 0.08);
+}
+
+@media (max-width: 1600px) {
+  .content_inform {
+    margin: 10% 0% 0% 5%;
+  }
+}
+
+@media (max-width: 1430px) {
+  .content_inform {
+    margin: 10% 0% 0% 5%;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content_photo {
+    width: auto;
+  }
+  .content_inform {
+    margin: 0;
+  }
+  .content_inform .inform_box {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-left: 0%;
+  }
+  .footer_main {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    max-width: 1000px;
+  }
+  .phone {
+    width: 100%;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+  }
+  .header_menu-set {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .phone_icon {
+    display: block;
+  }
+  .phone_link {
+    display: none;
+  }
+  .header .header_inner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .content_photo-set {
+    display: none;
+  }
+  .box_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .box_main-photo {
+    width: 260px;
+  }
+  .inform_box-set {
+    margin-top: 5%;
+  }
+  .content_text-about {
+    margin-bottom: 5%;
+    margin-left: 83px;
+  }
+  .content_box-name {
+    margin-left: 21px;
+  }
+  .saying_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .saying_box {
+    margin-bottom: 10px;
+  }
+  .saying {
+    height: 1760px;
+  }
+  .ready_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container_ready {
+    max-width: 387px;
+  }
+  .ready_btn-set {
+    margin: 0;
+  }
+  .ready_text-set {
+    margin-bottom: 25px;
+  }
+  .ready_side-text-set {
+    display: none;
+  }
+  .ready_content {
+    padding-top: 40px;
+  }
+  .footer_container {
+    margin: 0 auto;
+    margin-left: 2%;
+    padding-top: 2%;
+  }
+  .footer_main_text a {
+    text-decoration: none;
+  }
+  .footer_mainbox {
+    display: none;
+  }
+  .footer_main {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer_bottom {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (max-width: 1010px) {
+  .picture_img {
+    width: 700px;
+  }
+  .main .main_bg {
+    height: 688px;
+  }
+  .main .main_bg {
+    height: 516px;
+  }
+  .logo_mini {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 24px;
+  }
+  .logo_main {
+    display: none;
+  }
+  .main_logos {
+    margin: 50px 100px;
+  }
+  .main_logos-setting {
+    display: none;
+  }
+}
+
+/*900 */
+@media (max-width: 900px) {
+  .head_menu_set {
+    width: 491px;
+  }
+  .section_text-bottom {
+    font-size: 18px;
+  }
+  .section_text {
+    font-size: 40px;
+  }
+  .section_button-central {
+    width: 123px;
+    height: 38px;
+    font-size: 14px;
+  }
+  .section_text-set {
+    text-align: center;
+  }
+  .header_menu .header_menu-set .menu_set {
+    display: none;
+  }
+  .header_menu .mini_menu {
+    display: block;
+  }
+  .sub_menu {
+    gap: 27px;
+  }
+  .main_text {
+    font-size: 45px;
+  }
+  .main_text .main_text-set {
+    margin-top: 74px;
+  }
+  .picture_img {
+    width: 500px;
+  }
+  .main_bottom-text .main_bottom-set {
+    font-size: 15px;
+  }
+  .bottom_text-set {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  .mini_menu:active ~ .sub_menu,
+  .mini_menu:focus ~ .sub_menu {
+    display: block;
+  }
+  .sub_menu-set {
+    height: 15px;
+  }
+  .sub_menu-set:hover {
+    background-image: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .main_text {
+    font-size: 36px;
+  }
+  .main_text .main_text-set {
+    margin-top: 45px;
+  }
+  .picture_img {
+    width: 400px;
+  }
+  .main_buttons .button_left {
+    width: 108px;
+    height: 40px;
+  }
+  .main .main_bg {
+    height: 417px;
+  }
+  .main_content .content_name .content_name-set {
+    font-size: 36px;
+  }
+  .content_box-name {
+    font-size: 20px;
+    margin-left: 59px;
+  }
+  .content_box-name:last-child {
+    margin-left: 48px;
+  }
+  .content_text-about {
+    font-size: 16px;
+    margin-left: 93px;
+  }
+  .box_main-photo {
+    width: 225px;
+  }
+  .box_set-logo {
+    width: 45px;
+  }
+  .container_ready {
+    max-width: 274px;
+  }
+  .ready_text-set {
+    font-size: 28px;
+  }
+  .ready_side {
+    max-width: 405px;
+  }
+  .nav_link {
+    font-size: 16px;
+  }
+  .nav_main {
+    font-size: 20px;
+  }
+  .icons_footer {
+    height: 38px;
+  }
+  .footer_bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main_text {
+    font-size: 26px;
+  }
+  .main_bottom-text .main_bottom-set {
+    display: none;
+  }
+  .main_buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 17px;
+  }
+  .main_buttons .button_left {
+    margin: 0 auto;
+  }
+  .main_buttons .button_right {
+    margin: 0 auto;
+    height: 40px;
+  }
+  .picture_img {
+    width: 275px;
+  }
+  .main .main_bg {
+    height: 392px;
+  }
+  .bottom_text-set {
+    display: none;
+  }
+  .box_main-photo {
+    width: 175px;
+  }
+  .content_inform .inform_box {
+    width: 300px;
+  }
+  .content_box-name {
+    font-size: 18px;
+    margin-left: 74px;
+  }
+  .content_box-name:last-child {
+    margin-left: 25px;
+  }
+  .content_text-about {
+    margin-left: 69px;
+  }
+  .main_content .content_name .content_name-set {
+    font-size: 28px;
+  }
+  .main_logos {
+    margin: 50px;
+  }
+  .section_text-bottom {
+    font-size: 16px;
+  }
+  .section_text {
+    font-size: 28px;
+  }
+  .section_button-central {
+    width: 99px;
+    height: 26px;
+  }
+  .saying_main .saying_main-text {
+    font-size: 32px;
+  }
+  .saying .container_saying {
+    margin-top: 100px;
+  }
+  .saying_box {
+    max-width: 300px;
+  }
+  .saying_box .saying_box-text {
+    font-size: 16px;
+  }
+  .saying_box-logo {
+    margin-top: 1px;
+  }
+  .saying_username {
+    font-size: 18px;
+  }
+  .saying_link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sub_menu-link {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
