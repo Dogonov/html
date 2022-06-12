@@ -310,7 +310,7 @@ table {
   font-family: "Tiro Tamil", serif;
 }
 
-.main_buttons .button_right {
+.main_buttons .button_see {
   width: 199px;
   background: #ffffff;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
@@ -331,7 +331,7 @@ table {
   text-decoration: none;
 }
 
-.main_buttons .button_left {
+.main_buttons .button_buy {
   width: 148px;
   height: 50px;
   background: #3751ff;
@@ -632,6 +632,13 @@ table {
   text-decoration: underline;
 }
 
+.bg_fix {
+  background-color: #3751ff;
+  height: 323px;
+  width: 100%;
+  margin-top: 3534px;
+}
+
 .ready {
   max-height: 323px;
   height: 100%;
@@ -865,6 +872,12 @@ table {
   border-bottom: 1px solid rgba(135, 146, 161, 0.08);
 }
 
+@media (max-width: 1615px) {
+  .bg_fix {
+    display: none;
+  }
+}
+
 @media (max-width: 1600px) {
   .content_inform {
     margin: 10% 0% 0% 5%;
@@ -1093,7 +1106,7 @@ table {
   .picture_img {
     width: 400px;
   }
-  .main_buttons .button_left {
+  .main_buttons .button_buy {
     width: 108px;
     height: 40px;
   }
@@ -1158,16 +1171,13 @@ table {
     display: none;
   }
   .main_buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 17px;
+    display: -ms-grid;
+    display: grid;
   }
-  .main_buttons .button_left {
+  .main_buttons .button_buy {
     margin: 0 auto;
   }
-  .main_buttons .button_right {
+  .main_buttons .button_see {
     margin: 0 auto;
     height: 40px;
   }
@@ -1238,6 +1248,12 @@ table {
 @media (max-width: 400px) {
   .sub_menu-link {
     font-size: 10px;
+  }
+  .content_inform .inform_box {
+    width: 250px;
+  }
+  .header .button {
+    width: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */

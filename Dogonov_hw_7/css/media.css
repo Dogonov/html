@@ -1,6 +1,14 @@
-@media (max-width: 1500px) {
+@media (max-width: 1610px) {
     .main_description {
-        margin-right: -40px;
+        margin-right: 0px;
+    }
+    .main_container { 
+        overflow-x: hidden;
+    }
+    .bg_rectangle {
+        height: 617px;        
+        top: -219px;
+        left: 153px;
     }
 }
 
@@ -24,7 +32,7 @@
 
     .bg_rectangle {
         height: 617px;        
-        top: -219px;
+        top: -315px;
         left: 153px;
     }
 

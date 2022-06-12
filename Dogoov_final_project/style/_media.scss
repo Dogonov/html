@@ -1,3 +1,9 @@
+@media (max-width: 1615px) {
+  .bg_fix {
+    display: none;
+  }
+}
+
 @media (max-width: 1600px) {
   .content_inform {
     margin: 10% 0% 0% 5%;
@@ -268,7 +274,7 @@
     width: 400px;
   }
 
-  .main_buttons .button_left {
+  .main_buttons .button_buy {
     width: 108px;
     height: 40px;
   }
@@ -350,14 +356,13 @@
   }
 
   .main_buttons {
-    flex-direction: column;
-    gap: 17px;
+    display: grid;
 
-    .button_left {
+    .button_buy {
       margin: 0 auto;
     }
 
-    .button_right {
+    .button_see {
       margin: 0 auto;
       height: 40px;
     }
@@ -462,6 +467,16 @@
 @media (max-width: 400px) {
   .sub_menu-link {
     font-size: 10px;
+  }
+  .content_inform {
+    .inform_box {
+      width: 250px;
+    }
+  }
+  .header {
+    .button {
+      width: 80px;
+    }
   }
 
 }
