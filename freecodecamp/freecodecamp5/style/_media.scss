@@ -1,14 +1,22 @@
 @media (max-width: 550px) {
     .contact_social {
-        display: grid;
+        display: grid !important;
     }
-    .links_set {
-        font-size: 25px;
+    .links .links_set {
+        font-size: 25px !important;
+    }
+}
+@media (max-width: 400px) {
+    .links .links_set {
+        font-size: 20px !important;
     }
 }
 
-@media (max-width: 320px) {
-    .projects_title {
-        width: 305px;
+@media (max-width: 350px) {
+    .projects-title {
+        width: 300px !important;
+    }
+    .footer .footer_author {
+        font-size: 20px !important;
     }
 }
