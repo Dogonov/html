@@ -1,8 +1,11 @@
-var x1 = +prompt("Введите кординату Х для 1 точки");
-var y1 = +prompt("Введите кординату Y для 1 точки");
-var x2 = +prompt("Введите кординату Х для 2 точки");
-var y2 = +prompt("Введите кординату Y для 2 точки");
-var k = (y1 - y2) / (x1 - x2);
-var b = y2 - k*x2;
-// console.log ("y =" + k + "x +" + b);
-alert ("y =" + k + "x +" + b);
+var a = +prompt("Введите первое число");
+var b = +prompt("Введите второе число");
+var c = +prompt("Введите третие число");
+var resalt;
+if (a === b || b === c ||  a === c) {
+alert ("Ошибка");
+}
+else {
+    resalt = (a+b+c)/3;
+    alert (resalt);
+}
