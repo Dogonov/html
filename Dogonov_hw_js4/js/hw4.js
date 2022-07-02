@@ -5,3 +5,9 @@
 // 		Пользователь ввел: 6
 // 		Ряд Фибоначчи: 1, 1, 2, 3, 5, 8, 13, ...
 // 		Функция должна вернуть: 8
+var num = +prompt("Add number");
+function fib(n) {
+    return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+  }
+  
+  console.log(fib(num));
