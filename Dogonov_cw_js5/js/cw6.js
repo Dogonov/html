@@ -10,25 +10,20 @@
 // 			doCoffee(10)    => "Приготовлено чашек кофе: 2, осталось зерен: 0";
 // 			doCoffee(4)		=> "Можно еще зерен?" => "Приготовлено чашек кофе: 1, осталось зерен: 2";
 // 			doCoffee(3)		=> "Приготовлено чашек кофе: 1, осталось зерен: 0";
-var a = +prompt("количество кофейных зерен");
-
-function acceptsCofee(a) {
-    if (a % 5 === 0) {
-        var cupsFull = a / 5;
+window.beens = +prompt("количество кофейных зерен");
+function acceptsCofee(beens) {
+    if (beens % 5 === 0) {
+        var cupsFull = beens / 5;
         alert("Приготовлено чашек кофе:" + cupsFull + " осталось зерен: 0");
     }
-    if(a / 5 < 1){
-        prompt("Дайте еще зерен");
+    if (beens / 5 < 1) {
+        beens = beens + +prompt("Дайте еще зерен");
     }
     else {
-        var cups = Math.trunc(a / 5);
-        var beens = a - (cups * 5);
+        var cups = Math.trunc(beens / 5);
+        beens = beens - (cups * 5);
         alert("Приготовлено чашек кофе: " + cups + " осталось зерен: " + beens);
-        return beens;
     }
-    return beens;
+    console.log(acceptsCofee(beens));
 }
-console.log(acceptsCofee(a));
-var b = beens;
-var sum = b + a;
-console.log(acceptsCofee(sum));
+console.log(acceptsCofee(beens));
