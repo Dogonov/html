@@ -60,12 +60,12 @@ function fullGame() {
 
 function startGame() {
     while (true) {
-    fullGame();
-    
-    var result = confirm("Хотите повторить ?");
-    if (!result) {
-      return;
+        fullGame();
+
+        var result = confirm("Хотите повторить ?");
+        if (!result) {
+            return;
+        }
     }
-  }
-  }
-  startGame();
+}
+startGame();
