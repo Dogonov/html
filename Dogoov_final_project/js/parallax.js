@@ -1,0 +1,1 @@
+$('.parallax-window').parallax({imageSrc: './Images/parallax.example.jpg'});

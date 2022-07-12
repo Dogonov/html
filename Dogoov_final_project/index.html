@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Final Project</title>
+  <link rel="stylesheet" type="text/css" href="./style/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./style/slick-theme.css" />
   <link rel="stylesheet" href="./style/style.css" />
+
 </head>
 
 <body>
-
   <!--header-------------------------------------------------------------------------------------------------------------- -->
-
   <div class="header">
     <div class="container">
       <div class="arrow">
@@ -76,7 +77,18 @@
   </div>
 
   <!-- main--------------------------------------------------------------------------------------------------- -->
-
+  <div class="your-class">
+    <div>
+      <img src="./Images/test1.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Images/test2.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Images/test3.jpg" alt="">
+    </div>
+  </div>
+  <button id="modalBtn">Open Modal</button>
   <div class="main">
     <div class="main_bg">
       <div class="container">
@@ -182,7 +194,6 @@
                   </div>
                   <div class="inform_box-set">
                     <img class="box_set-logo" src="./Images/content_logo_3.png" alt="icon" />
-
                     <p class="content_box-name">Fast and Reliable</p>
                   </div>
                   <div class="content_text-about">
@@ -285,7 +296,8 @@
               </p>
             </div>
             <div class="ready_side">
-              <a href="#" class="ready_btn-set"><img class="ready_btn-icon" src="./Images/iconfinder.png" alt="icon" />Get
+              <a href="#" class="ready_btn-set"><img class="ready_btn-icon" src="./Images/iconfinder.png"
+                  alt="icon" />Get
                 in touch now</a>
               <div class="ready_side-text">
                 <p class="ready_side-text-set">
@@ -297,7 +309,7 @@
           </div>
         </div>
       </div>
-
+      <div class="parallax-window" data-parallax="scroll" data-image-src="./Images/parallax.example.jpg"></div>
       <!-- footer-------------------------------------------------------------------------------------------------------------------------------- -->
 
       <div class="footer">
@@ -363,6 +375,35 @@
     </div>
   </div>
   <div class="bg_fix"> </div>
+  <button id="topbtn" title="Go to top">Top</button>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Add info</p>
+      <div class="form">
+        <form>
+          <label>Add Name
+            <input type="text" id="name" name="name" value="">
+          </label>
+        </form>
+        <form>
+          <label>Add Age
+            <input type="text" id="age">
+          </label>
+        </form>
+      </div>
+      <button class="btn" id="add" >Send</button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
+  <script src="./js/topScrol.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/slick.min.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+  <script src="./js/parallax.js"></script>
 </body>
 
 </html>
